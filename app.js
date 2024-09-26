@@ -56,6 +56,10 @@ app.delete("/tasks/:index", (req, res) => {
     });
 });
 
+app.get("/", (req, res) =>
+    res.status(200).json({ message: "Hello my friend" })
+);
+
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
